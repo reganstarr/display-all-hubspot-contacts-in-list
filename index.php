@@ -2,7 +2,10 @@
 
 $hubspotApiKey = getenv('HUBSPOT_API_KEY');
 $listId = getenv('HUBSPOT_LIST_ID');
-$propertiesArray = json_decode(getenv('HUBSPOT_CONTACT_PROPERTIES'), true);
+
+$propertiesJson = getenv('HUBSPOT_CONTACT_PROPERTIES');
+$propertiesArray = json_decode($propertiesJson, true);
+$properties = $propertiesArray['properties'];
 
 
 
