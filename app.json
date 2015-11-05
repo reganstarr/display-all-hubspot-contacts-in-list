@@ -1,0 +1,16 @@
+{
+  "env": {
+      "HUBSPOT_API_KEY": {
+      "description": "Your HubSpot API Key, which you can find at https://app.hubspot.com/keys/get",
+      "required": true
+    },
+    "HUBSPOT_LIST_ID": {
+      "description": "The ID of the HubSpot List you want to display.",
+      "required": true
+    },
+    "HUBSPOT_PROPERTIES_JSON": {
+      "description": "A JSON array of the contact properties you want to include in your report.",
+      "required": true
+    }
+  }
+}
